@@ -1,0 +1,28 @@
+{
+  "name": "@garage44/bunchy",
+  "version": "1.0.0",
+  "description": "Bunchy is a KISS task runner for frontend development.",
+  "main": "index.ts",
+  "files": [
+    "client.ts",
+    "index.ts",
+    "README.md",
+    "task.ts",
+    "tasks.ts",
+    "utils.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint:ts": "eslint **/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Garage44",
+  "license": "MIT",
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "node-notifier": "^10.0.1",
+    "tildify": "^3.0.0"
+  }
+}
