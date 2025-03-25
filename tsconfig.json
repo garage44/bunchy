@@ -1,0 +1,9 @@
+{
+    "extends": "@garage44/tsconfig",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["./*"]
+        },
+    }
+}

@@ -1,8 +1,24 @@
 {
   "name": "@garage44/bunchy",
-  "version": "1.0.0",
-  "description": "Bunchy is a KISS task runner for frontend development.",
+  "version": "1.1.0",
+  "author": "Garage44",
   "main": "index.ts",
+  "dependencies": {
+    "@garage44/common": "^1.0.2",
+    "chokidar": "^4.0.3",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.3.0",
+    "glob": "^11.0.1",
+    "lodash.template": "^4.5.0",
+    "node-notifier": "^10.0.1",
+    "picocolors": "^1.1.1",
+    "tildify": "^3.0.0",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@garage44/tsconfig": "> 1"
+  },
+  "description": "Bunchy is a KISS task runner for frontend development.",
   "files": [
     "client.ts",
     "index.ts",
@@ -11,6 +27,7 @@
     "tasks.ts",
     "utils.ts"
   ],
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -18,11 +35,12 @@
     "lint:ts": "eslint **/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Garage44",
-  "license": "MIT",
-  "dependencies": {
-    "fast-glob": "^3.3.2",
-    "node-notifier": "^10.0.1",
-    "tildify": "^3.0.0"
+  "peerDependencies": {
+    "classnames": "^2.5.1",
+    "deepsignal": "^1.6.0",
+    "eslint": ">= 9",
+    "eventemitter3": "^5.0.1",
+    "express": "5",
+    "@preact/signals": ">= 2"
   }
 }
