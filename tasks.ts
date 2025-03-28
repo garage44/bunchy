@@ -16,7 +16,6 @@ function getExternalsFromPackageJson() {
     const sections = [
         'dependencies',
         'devDependencies',
-        'peerDependencies',
     ].sort()
 
     const externals = new Set<string>()

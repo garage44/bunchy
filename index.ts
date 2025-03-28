@@ -68,12 +68,6 @@ export async function bunchyService(server, config) {
     // Store reference to the manager
     serverManager = manager
 
-    // Add a simple message echo handler similar to the original implementation
-    manager.api.post('/echo', async(ctx, request) => {
-        // Simply echo back the data
-        return request.data
-    })
-
     await tasks.dev.start({minify: false, sourceMap: true})
     return server
 }

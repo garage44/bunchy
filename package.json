@@ -5,6 +5,7 @@
   "main": "index.ts",
   "dependencies": {
     "@garage44/common": "latest",
+    "archy": "^1.0.0",
     "chokidar": "^4.0.3",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.3.0",
@@ -12,9 +13,9 @@
     "lodash.template": "^4.5.0",
     "node-notifier": "^10.0.1",
     "picocolors": "^1.1.1",
+    "sass": "^1.83.4",
     "tildify": "^3.0.0",
-    "ws": "^8.18.1",
-    "sass": "^1.83.4"
+    "ws": "^8.18.1"
   },
   "devDependencies": {
     "@garage44/stylelint-config": "latest",
@@ -22,7 +23,7 @@
     "stylelint": "^15.10.3",
     "eslint": ">= 9"
   },
-  "description": "Bunchy is a KISS task runner for frontend development.",
+  "description": "Bunchy is a blazingly fast frontend development tool for Bun.",
   "files": [
     "client.ts",
     "index.ts",
