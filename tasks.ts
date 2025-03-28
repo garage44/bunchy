@@ -302,7 +302,7 @@ tasks.stylesComponents = new Task('styles:components', async function({minify, s
 
     const componentImports = allImports.map((f) => {
         const scssImport = f.replace(`${settings.dir.components}${path.sep}`, '').replace('.scss', '')
-        const namespace = scssImport.replace(/\//g, '-').replace(/\./g, '-')
+        const namespace = scssImport.replace(/\//g, '-').replace(/\./g, '-').replace('@', '')
         return `@use "${scssImport}" as ${namespace};`
     })
 

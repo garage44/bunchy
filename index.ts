@@ -6,7 +6,7 @@ import {
 import {Scss, generateRandomId, showConfig} from './utils'
 import {URL, fileURLToPath} from 'node:url'
 import {WebSocket} from 'ws'
-import path from 'path'
+import path from 'node:path'
 import {tasks} from './tasks.ts'
 
 const currentDir = fileURLToPath(new URL('.', import.meta.url))

@@ -4,7 +4,7 @@
   "author": "Garage44",
   "main": "index.ts",
   "dependencies": {
-    "@garage44/common": "^1.0.2",
+    "@garage44/common": "latest",
     "chokidar": "^4.0.3",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.3.0",
@@ -13,10 +13,14 @@
     "node-notifier": "^10.0.1",
     "picocolors": "^1.1.1",
     "tildify": "^3.0.0",
-    "ws": "^8.18.1"
+    "ws": "^8.18.1",
+    "sass": "^1.83.4"
   },
   "devDependencies": {
-    "@garage44/tsconfig": "> 1"
+    "@garage44/stylelint-config": "latest",
+    "@garage44/tsconfig": "latest",
+    "stylelint": "^15.10.3",
+    "eslint": ">= 9"
   },
   "description": "Bunchy is a KISS task runner for frontend development.",
   "files": [
@@ -32,15 +36,8 @@
     "access": "public"
   },
   "scripts": {
+    "lint:scss": "stylelint **/*.scss",
     "lint:ts": "eslint **/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "peerDependencies": {
-    "classnames": "^2.5.1",
-    "deepsignal": "^1.6.0",
-    "eslint": ">= 9",
-    "eventemitter3": "^5.0.1",
-    "express": "5",
-    "@preact/signals": ">= 2"
   }
 }
